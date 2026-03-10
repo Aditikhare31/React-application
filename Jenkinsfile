@@ -15,7 +15,19 @@ pipeline {
             }
         }
 
-        stage('Deploy') {
+        stage('Deploy to dev') {
+            when {
+                branch 'dev'
+            }
+            steps {
+                sh './deploy.sh'
+            }
+        }
+
+        stage('Deploy to Prod') {
+            when {
+                branch 'master'
+            }
             steps {
                 sh './deploy.sh'
             }
