@@ -3,31 +3,12 @@ pipeline {
 
     stages {
 
-        stage('Checkout') {
-            steps {
-                checkout scm
-            }
-        }   
-
-        stage('Build') {
+        stage('build') {
             steps {
                 sh './build.sh'
             }
-        }
-
-        stage('Deploy to dev') {
-            when {
-                branch 'dev'
-            }
-            steps {
-                sh './deploy.sh'
-            }
-        }
-
-        stage('Deploy to Prod') {
-            when {
-                branch 'main'
-            }
+        }   
+        stage('deploy') {
             steps {
                 sh './deploy.sh'
             }
