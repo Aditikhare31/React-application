@@ -1,6 +1,6 @@
-#!/bin/bash 
+#!/bin/bash
 
-docker login -u aditikhare31 -p PurvaManu_0302 
+docker login -u adikhare31 -p PurvaManu_0302 
 
 if [ "$GIT_BRANCH" = "dev" ]; then 
 	docker tag nginx_image aditikhare31/reactjs-dev 
