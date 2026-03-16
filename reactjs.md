@@ -154,7 +154,11 @@ Monitoring stack includes:
 * **Prometheus** → Scrapes and stores metrics
 * **Grafana** → Visualizes metrics with dashboards
 
+![Monitoring dashboard](https://github.com/Aditikhare31/React-application/blob/main/Monitoring-dashboard.png)
+![Alert setup](https://github.com/Aditikhare31/React-application/blob/main/Monitoring-setup.png)
+
 Alerts are configured in Grafana to notify if the application or server goes down.
+
 
 ---
 
