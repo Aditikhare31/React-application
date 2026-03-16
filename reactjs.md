@@ -161,15 +161,3 @@ Alerts are configured in Grafana to notify if the application or server goes dow
 
 
 ---
-
-# ✅ Project Outcome
-
-✔ Automated CI/CD pipeline
-✔ Containerized application deployment
-✔ Separate dev and production pipelines
-✔ Docker Hub image management
-✔ Real-time monitoring using Prometheus and Grafana
-✔ Alerting for application downtime
-
----
-
